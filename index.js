@@ -41,7 +41,8 @@ app.post('/users', (req, res) => {
     newUser.id = users.length;
     //const 
     //console.log("Hitting post", req.body);
-    res.send(JSON.stringify(newUser));
+    // res.send(JSON.stringify(newUser));
+    res.json(newUser);
 })
 
 app.get('/', (req, res) => {
